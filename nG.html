@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nG.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="clock.html">Digital clock</a>
+        <a href="color.html">Color change</a>
+        <a href="nG.html">Guess number</a>
+    </div>
+    <div id="wraper">
+        <h1>Number Guessing game</h1>
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>You have 10 attempts to guess the right number.</p>
+        </br>
+        <div class="in">
+            <form class="form">
+                <label for="guessField" id="guess">Guess a Number</label>
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" id="subt" value="Submit Guess" class="guessSubmit">
+            </form>
+        </div>
+        <div class="resultParas">
+            <p>Previous Guess: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="nG.js" defer></script>
+</body>
+</html>
